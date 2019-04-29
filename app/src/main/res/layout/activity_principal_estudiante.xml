@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginBottom="10dp"
+    tools:context=".PrincipalEstudiante">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnVerHorarios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/boton_redondo"
+            android:onClick="verHorarios"
+            android:text="Ver horarios" />
+
+        <Button
+            android:id="@+id/btnVerReglamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/boton_redondo"
+            android:onClick="verReglamento"
+            android:text="Ver reglamento" />
+
+        <Button
+            android:id="@+id/btnReservas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/boton_redondo"
+            android:onClick="hacerReservas"
+            android:text="Hacer reservas" />
+
+        <Button
+            android:id="@+id/btnVerReservas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/boton_redondo"
+            android:onClick="verReservas"
+            android:text="Ver mis reservas" />
+
+        <Button
+            android:id="@+id/btnInformacionP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/boton_redondo"
+            android:onClick="irInformacionP"
+            android:text="Gestionar información personal" />
+
+        <Button
+            android:id="@+id/btnSalir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/boton_salir"
+            android:onClick="salir"
+            android:text="Salir" />
+    </LinearLayout>
+</RelativeLayout>

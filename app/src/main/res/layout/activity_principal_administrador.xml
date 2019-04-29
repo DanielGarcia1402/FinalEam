@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginBottom="10dp"
+    tools:context=".PrincipalAdministrador">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnVerEstudiantes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="verEstudiantes"
+            android:background="@drawable/boton_redondo"
+            android:text="Ver estudiantes" />
+
+        <Button
+            android:id="@+id/btnTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="gestionarTV"
+            android:background="@drawable/boton_redondo"
+            android:text="Gestionar tv" />
+
+        <Button
+            android:id="@+id/btnConsolar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="gestionarConsolas"
+            android:background="@drawable/boton_redondo"
+            android:text="Gestionar consolas" />
+
+        <Button
+            android:id="@+id/btnHorariosReservas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="gestionarHorariosReservas"
+            android:background="@drawable/boton_redondo"
+            android:text="Gestionar horarios reservas" />
+
+        <Button
+            android:id="@+id/btnReglamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="reglamento"
+            android:background="@drawable/boton_redondo"
+            android:text="Actualizar reglamento" />
+
+        <Button
+            android:id="@+id/btnVerHoReservas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="verHorariosReservas"
+            android:background="@drawable/boton_redondo"
+            android:text="Ver horario reservas" />
+
+        <Button
+            android:id="@+id/btnSalir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:onClick="salir"
+            android:background="@drawable/boton_salir"
+            android:text="Salir" />
+    </LinearLayout>
+</RelativeLayout>
