@@ -14,6 +14,8 @@ public class PrincipalAdministrador extends AppCompatActivity {
     }
 
     public void verEstudiantes(View view) {
+        Intent intent = new Intent(PrincipalAdministrador.this, Main2Activity.class);
+        startActivity(intent);
     }
 
     public void gestionarTV(View view) {
