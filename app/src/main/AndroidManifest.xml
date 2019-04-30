@@ -23,7 +23,8 @@
             android:name=".Main2Activity"
             android:label="@string/title_activity_main2"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".VerUsuarios"></activity>
+        <activity android:name=".VerUsuarios" />
+        <activity android:name=".ActivarUsuarios"></activity>
     </application>
 
 </manifest>

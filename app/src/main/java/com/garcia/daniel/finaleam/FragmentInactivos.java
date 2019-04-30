@@ -101,10 +101,10 @@ public class FragmentInactivos extends Fragment {
                                 + listaUsuarios.get(x).getRol());
             }
 
-            //adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, listaAdapter);
+            adapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_list_item_1, listaAdapter);
             //adapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_list_item_1, listaAdapter);
-            //adaptador = new Adapter(getContext(), (ArrayList<Usuario>) listaUsuarios);
-            //listUsu.setAdapter(adapter);
+            //adapter = new ArrayAdapter(getContext(), (ArrayList<Usuario>) listaUsuarios);
+            listUsu.setAdapter(adapter);
         } else {
             listaAdapter.add("No hay registros en la base de datos");
             adapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_list_item_1, listaAdapter);

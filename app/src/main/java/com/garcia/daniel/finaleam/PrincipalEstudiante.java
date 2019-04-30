@@ -31,5 +31,6 @@ public class PrincipalEstudiante extends AppCompatActivity {
     public void salir(View view) {
         Intent intent = new Intent(PrincipalEstudiante.this, MainActivity.class);
         startActivity(intent);
+        finish();
     }
 }

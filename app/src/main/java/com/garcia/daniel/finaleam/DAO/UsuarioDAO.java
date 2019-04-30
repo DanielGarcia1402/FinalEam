@@ -76,20 +76,21 @@ public class UsuarioDAO {
     public boolean modificar(Usuario usuario) {
         String tabla = "usuario";
         String condicion = "cedula=" + usuario.getCedula();
+        int estado = 1;
 
         ContentValues registro = new ContentValues();
 
-        registro.put("nombres", usuario.getNombres());
-        registro.put("apellidos", usuario.getApellidos());
-        registro.put("cedula", usuario.getCedula());
-        registro.put("codigoEstudiante", usuario.getCodigoEstudiante());
-        registro.put("facultad", usuario.getFacultad());
-        registro.put("programa", usuario.getPrograma());
-        registro.put("fechaNacimiento", usuario.getFechaNacimiento());
-        registro.put("correo", usuario.getCorreo());
-        registro.put("password", usuario.getPassword());
-        registro.put("estado", usuario.getEstado());
-        registro.put("rol", usuario.getRol());
+        //registro.put("nombres", usuario.getNombres());
+        //registro.put("apellidos", usuario.getApellidos());
+        //registro.put("cedula", usuario.getCedula());
+        //registro.put("codigoEstudiante", usuario.getCodigoEstudiante());
+        //registro.put("facultad", usuario.getFacultad());
+        //registro.put("programa", usuario.getPrograma());
+        //registro.put("fechaNacimiento", usuario.getFechaNacimiento());
+        //registro.put("correo", usuario.getCorreo());
+        //registro.put("password", usuario.getPassword());
+        registro.put("estado", estado);
+        //registro.put("rol", usuario.getRol());
 
         return conexion.ejecutarUpdate(tabla, condicion, registro);
     }

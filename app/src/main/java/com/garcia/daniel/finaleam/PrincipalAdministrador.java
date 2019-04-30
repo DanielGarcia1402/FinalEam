@@ -36,5 +36,6 @@ public class PrincipalAdministrador extends AppCompatActivity {
     public void salir(View view) {
         Intent intent = new Intent(PrincipalAdministrador.this, MainActivity.class);
         startActivity(intent);
+        finish();
     }
 }

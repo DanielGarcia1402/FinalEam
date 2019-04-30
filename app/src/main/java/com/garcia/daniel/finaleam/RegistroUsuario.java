@@ -68,7 +68,7 @@ public class RegistroUsuario extends AppCompatActivity {
                 DatePickerDialog mDatePicker = new DatePickerDialog(RegistroUsuario.this, new DatePickerDialog.OnDateSetListener(){
                     @Override
                     public void onDateSet(DatePicker datePicker, int selectedyear, int selectedmonth, int selectedday) {
-                        fechaNacimiento.setText(selectedyear+"/"+selectedmonth+"/"+selectedday);
+                        fechaNacimiento.setText(selectedyear+"/"+(selectedmonth + 1)+"/"+selectedday);
 
                     }
                 },mcurrentDate.get(Calendar.YEAR), mcurrentDate.get(Calendar.MONTH), mcurrentDate.get(Calendar.DAY_OF_MONTH));

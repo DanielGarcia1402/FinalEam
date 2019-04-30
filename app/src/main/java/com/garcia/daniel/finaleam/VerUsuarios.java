@@ -65,6 +65,8 @@ public class VerUsuarios extends AppCompatActivity {
     }
 
     public void mostrarInformacion(int pos) {
+        String nom = listaUsuarios.get(pos).getNombres();
+        String rol = listaUsuarios.get(pos).getRol();
         int cedu = listaUsuarios.get(pos).getCedula();
         int esta = listaUsuarios.get(pos).getEstado();
 
@@ -72,6 +74,14 @@ public class VerUsuarios extends AppCompatActivity {
                 "Nombre: " + listaUsuarios.get(pos).getNombres()+ " " +
                         "Cedula: " + listaUsuarios.get(pos).getCedula()+ " " +
                         "Rol: " + listaUsuarios.get(pos).getRol()+ " ", Toast.LENGTH_SHORT).show();
+
+        Intent intent = new Intent(VerUsuarios.this, ActivarUsuarios.class);
+        intent.putExtra("nombre", nom);
+        intent.putExtra("cedula", cedu);
+        intent.putExtra("rol", rol);
+        intent.putExtra("estado", listaUsuarios.get(pos).getEstado());
+        startActivity(intent);
+
     }
 
 

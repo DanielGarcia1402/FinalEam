@@ -54,11 +54,13 @@ public class MainActivity extends AppCompatActivity {
                                 Toast.makeText(this, "Bienvenido Admin "+usuariooo.getNombres(), Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent(MainActivity.this, PrincipalAdministrador.class);
                                 startActivity(intent);
+                                finish();
                             }else {
                                 if(roule.equals(estu)){
                                     Toast.makeText(this, "Bienvenido Estudiante "+usuariooo.getNombres(), Toast.LENGTH_SHORT).show();
                                     Intent intent = new Intent(MainActivity.this, PrincipalEstudiante.class);
                                     startActivity(intent);
+                                    finish();
                                 }
                             }
 

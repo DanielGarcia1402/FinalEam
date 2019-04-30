@@ -32,11 +32,9 @@ public class CtlUsuario {
         return dao.eliminar(usuario);
     }
 
-    public boolean modificarUsuario(String nombres,String apellidos,int cedula,int codigoEstudiante,
-                                    String facultad,String programa,String fechaNacimiento,
-                                    String correo,String password,int estado,String rol){
+    public boolean modificarUsuario(int cedula){
         Usuario usuario = new Usuario(
-                nombres,apellidos,cedula,codigoEstudiante,facultad,programa,fechaNacimiento,correo,password,estado,rol
+                "", "", cedula, 0, "", "", "", "", "", 0, ""
         );
         return dao.modificar(usuario);
     }
