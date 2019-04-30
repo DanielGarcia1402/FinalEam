@@ -57,7 +57,6 @@ public class Conexion extends SQLiteOpenHelper {
 
         bd.execSQL("insert into programa values('Software', 212123)");
         bd.execSQL("insert into programa values('Industrial', 104352)");
-        bd.execSQL("insert into programa values('Mecatronica', 091190)");
         bd.execSQL("insert into programa values('Administracion de empresas', 897123)");
 
 
@@ -68,7 +67,6 @@ public class Conexion extends SQLiteOpenHelper {
                 ")");
 
         bd.execSQL("insert into facultad values('Ingenieria', 1234, 212123)");
-        bd.execSQL("insert into facultad values('Ingenieria', 0987, 091190)");
         bd.execSQL("insert into facultad values('Contabilidad', 4567, 897123)");
 
     }

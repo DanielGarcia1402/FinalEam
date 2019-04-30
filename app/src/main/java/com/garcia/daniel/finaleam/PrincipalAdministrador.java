@@ -14,7 +14,7 @@ public class PrincipalAdministrador extends AppCompatActivity {
     }
 
     public void verEstudiantes(View view) {
-        Intent intent = new Intent(PrincipalAdministrador.this, Main2Activity.class);
+        Intent intent = new Intent(PrincipalAdministrador.this, VerUsuarios.class);
         startActivity(intent);
     }
 

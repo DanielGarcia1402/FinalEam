@@ -41,7 +41,7 @@ public class CtlUsuario {
         return dao.modificar(usuario);
     }
 
-    public List<Usuario> listarUsuario() {
-        return dao.Listar();
+    public List<Usuario> listarUsuario(int estado) {
+        return dao.Listar(estado);
     }
 }

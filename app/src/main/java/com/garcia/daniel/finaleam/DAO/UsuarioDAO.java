@@ -94,10 +94,10 @@ public class UsuarioDAO {
         return conexion.ejecutarUpdate(tabla, condicion, registro);
     }
 
-    public List<Usuario> Listar() {
+    public List<Usuario> Listar(int estado) {
         List<Usuario> listaUsuarios = new ArrayList<Usuario>();
         String consulta = "select nombres,apellidos,cedula,codigoEstudiante,facultad,programa," +
-                "fechaNacimiento,correo,password,estado,rol from usuario";
+                "fechaNacimiento,correo,password,estado,rol from usuario where rol = 'Estudiante' and estado="+estado;
         Cursor temp = conexion.ejecutarSearch(consulta);
 
         if (temp.moveToFirst()) {
@@ -106,14 +106,14 @@ public class UsuarioDAO {
 
                         temp.getString(0),
                         temp.getString(1),
-                        Integer.parseInt(temp.getString(2)),
-                        Integer.parseInt(temp.getString(3)),
+                        temp.getInt(2),
+                        temp.getInt(3),
                         temp.getString(4),
                         temp.getString(5),
                         temp.getString(6),
                         temp.getString(7),
                         temp.getString(8),
-                        Integer.parseInt(temp.getString(9)),
+                        temp.getInt(9),
                         temp.getString(10));
 
                 listaUsuarios.add(usuario);
