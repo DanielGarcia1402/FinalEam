@@ -21,6 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:onClick="verEstudiantes"
+            android:textColor="#ffffff"
             android:background="@drawable/boton_redondo"
             android:text="Ver estudiantes" />
 
@@ -30,6 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:onClick="gestionarTV"
+            android:textColor="#ffffff"
             android:background="@drawable/boton_redondo"
             android:text="Gestionar tv" />
 
@@ -39,6 +41,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:onClick="gestionarConsolas"
+            android:textColor="#ffffff"
             android:background="@drawable/boton_redondo"
             android:text="Gestionar consolas" />
 
@@ -48,6 +51,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:onClick="gestionarHorariosReservas"
+            android:textColor="#ffffff"
             android:background="@drawable/boton_redondo"
             android:text="Gestionar horarios reservas" />
 
@@ -57,6 +61,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:onClick="reglamento"
+            android:textColor="#ffffff"
             android:background="@drawable/boton_redondo"
             android:text="Actualizar reglamento" />
 
@@ -66,6 +71,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:onClick="verHorariosReservas"
+            android:textColor="#ffffff"
             android:background="@drawable/boton_redondo"
             android:text="Ver horario reservas" />
 
@@ -75,6 +81,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="28dp"
             android:onClick="salir"
+            android:textColor="#ffffff"
             android:background="@drawable/boton_salir"
             android:text="Salir" />
     </LinearLayout>

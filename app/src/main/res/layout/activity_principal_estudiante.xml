@@ -20,6 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
             android:background="@drawable/boton_redondo"
             android:onClick="verHorarios"
             android:text="Ver horarios" />
@@ -29,6 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
             android:background="@drawable/boton_redondo"
             android:onClick="verReglamento"
             android:text="Ver reglamento" />
@@ -39,6 +41,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:background="@drawable/boton_redondo"
+            android:textColor="#ffffff"
             android:onClick="hacerReservas"
             android:text="Hacer reservas" />
 
@@ -47,6 +50,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
             android:background="@drawable/boton_redondo"
             android:onClick="verReservas"
             android:text="Ver mis reservas" />
@@ -56,6 +60,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
             android:background="@drawable/boton_redondo"
             android:onClick="irInformacionP"
             android:text="Gestionar información personal" />
@@ -66,6 +71,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:background="@drawable/boton_salir"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
             android:onClick="salir"
             android:text="Salir" />
     </LinearLayout>
